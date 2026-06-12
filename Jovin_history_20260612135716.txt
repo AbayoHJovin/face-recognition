@@ -1,2 +1,0 @@
-2026-06-12 13:57:16 | SESSION_START | speaker=Jovin | confidence=n/a | motor=n/a | vision node online
-2026-06-12 13:57:17 | MOTOR_COMMAND | speaker=Jovin | confidence=0.00 | motor=NO_FACE | published=NO_FACE
