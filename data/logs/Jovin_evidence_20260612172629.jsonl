@@ -1,0 +1,73 @@
+{"timestamp": "2026-06-12 17:26:29", "unix_ts": 1781277989.175273, "event": "SESSION_START", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "vision node online"}
+{"timestamp": "2026-06-12 17:26:30", "unix_ts": 1781277990.3199642, "event": "MOTOR_COMMAND", "speaker_id": "Jovin", "confidence": 0.0, "motor_command": "NO_FACE", "details": "published=NO_FACE"}
+{"timestamp": "2026-06-12 17:26:42", "unix_ts": 1781278002.964079, "event": "LOCK_ACQUIRED", "speaker_id": "Jovin", "confidence": 0.589337170124054, "motor_command": null, "details": "target entered frame"}
+{"timestamp": "2026-06-12 17:26:42", "unix_ts": 1781278002.9680552, "event": "MOVED_LEFT", "speaker_id": "Jovin", "confidence": 0.589337170124054, "motor_command": null, "details": "cx_norm=0.20"}
+{"timestamp": "2026-06-12 17:26:42", "unix_ts": 1781278002.9710546, "event": "MOTOR_COMMAND", "speaker_id": "Jovin", "confidence": 0.589337170124054, "motor_command": "CENTERED", "details": "published=CENTERED"}
+{"timestamp": "2026-06-12 17:26:43", "unix_ts": 1781278003.6574214, "event": "STOPPED", "speaker_id": "Jovin", "confidence": 0.554862380027771, "motor_command": null, "details": "cx_norm=0.44"}
+{"timestamp": "2026-06-12 17:26:44", "unix_ts": 1781278004.0747404, "event": "MOVED_RIGHT", "speaker_id": "Jovin", "confidence": 0.7795510292053223, "motor_command": null, "details": "cx_norm=0.60"}
+{"timestamp": "2026-06-12 17:26:44", "unix_ts": 1781278004.7029786, "event": "OUT_OF_FRAME", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "lost_frames=1"}
+{"timestamp": "2026-06-12 17:26:47", "unix_ts": 1781278007.6828384, "event": "LOCK_LOST", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "target left frame beyond tolerance"}
+{"timestamp": "2026-06-12 17:26:47", "unix_ts": 1781278007.7313967, "event": "MOTOR_COMMAND", "speaker_id": "Jovin", "confidence": 0.0, "motor_command": "NO_FACE", "details": "published=NO_FACE"}
+{"timestamp": "2026-06-12 17:26:50", "unix_ts": 1781278010.9805894, "event": "LOCK_ACQUIRED", "speaker_id": "Jovin", "confidence": 0.724564790725708, "motor_command": null, "details": "target entered frame"}
+{"timestamp": "2026-06-12 17:26:50", "unix_ts": 1781278010.98259, "event": "MOVED_RIGHT", "speaker_id": "Jovin", "confidence": 0.724564790725708, "motor_command": null, "details": "cx_norm=0.81"}
+{"timestamp": "2026-06-12 17:26:50", "unix_ts": 1781278010.985589, "event": "MOTOR_COMMAND", "speaker_id": "Jovin", "confidence": 0.724564790725708, "motor_command": "CENTERED", "details": "published=CENTERED"}
+{"timestamp": "2026-06-12 17:26:51", "unix_ts": 1781278011.6042416, "event": "STOPPED", "speaker_id": "Jovin", "confidence": 0.4580443501472473, "motor_command": null, "details": "cx_norm=0.58"}
+{"timestamp": "2026-06-12 17:26:51", "unix_ts": 1781278011.9861038, "event": "MOVED_LEFT", "speaker_id": "Jovin", "confidence": 0.7421867251396179, "motor_command": null, "details": "cx_norm=0.38"}
+{"timestamp": "2026-06-12 17:26:52", "unix_ts": 1781278012.5893312, "event": "OUT_OF_FRAME", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "lost_frames=1"}
+{"timestamp": "2026-06-12 17:26:55", "unix_ts": 1781278015.5614717, "event": "LOCK_LOST", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "target left frame beyond tolerance"}
+{"timestamp": "2026-06-12 17:26:55", "unix_ts": 1781278015.5633805, "event": "MOTOR_COMMAND", "speaker_id": "Jovin", "confidence": 0.0, "motor_command": "NO_FACE", "details": "published=NO_FACE"}
+{"timestamp": "2026-06-12 17:27:38", "unix_ts": 1781278058.6229136, "event": "LOCK_ACQUIRED", "speaker_id": "Jovin", "confidence": 0.5284756422042847, "motor_command": null, "details": "target entered frame"}
+{"timestamp": "2026-06-12 17:27:38", "unix_ts": 1781278058.7871177, "event": "MOVED_RIGHT", "speaker_id": "Jovin", "confidence": 0.5284756422042847, "motor_command": null, "details": "cx_norm=0.81"}
+{"timestamp": "2026-06-12 17:27:38", "unix_ts": 1781278058.9626539, "event": "MOTOR_COMMAND", "speaker_id": "Jovin", "confidence": 0.5284756422042847, "motor_command": "CENTERED", "details": "published=CENTERED"}
+{"timestamp": "2026-06-12 17:27:39", "unix_ts": 1781278059.22228, "event": "STOPPED", "speaker_id": "Jovin", "confidence": 0.7724994421005249, "motor_command": null, "details": "cx_norm=0.58"}
+{"timestamp": "2026-06-12 17:27:40", "unix_ts": 1781278060.0077915, "event": "MOVED_LEFT", "speaker_id": "Jovin", "confidence": 0.7486233711242676, "motor_command": null, "details": "cx_norm=0.31"}
+{"timestamp": "2026-06-12 17:27:40", "unix_ts": 1781278060.3877785, "event": "OUT_OF_FRAME", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "lost_frames=1"}
+{"timestamp": "2026-06-12 17:27:43", "unix_ts": 1781278063.5932264, "event": "LOCK_LOST", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "target left frame beyond tolerance"}
+{"timestamp": "2026-06-12 17:27:43", "unix_ts": 1781278063.5982203, "event": "MOTOR_COMMAND", "speaker_id": "Jovin", "confidence": 0.0, "motor_command": "NO_FACE", "details": "published=NO_FACE"}
+{"timestamp": "2026-06-12 17:27:48", "unix_ts": 1781278068.2463405, "event": "LOCK_ACQUIRED", "speaker_id": "Jovin", "confidence": 0.4943634867668152, "motor_command": null, "details": "target entered frame"}
+{"timestamp": "2026-06-12 17:27:48", "unix_ts": 1781278068.356341, "event": "MOVED_RIGHT", "speaker_id": "Jovin", "confidence": 0.4943634867668152, "motor_command": null, "details": "cx_norm=0.71"}
+{"timestamp": "2026-06-12 17:27:48", "unix_ts": 1781278068.6991851, "event": "MOTOR_COMMAND", "speaker_id": "Jovin", "confidence": 0.4943634867668152, "motor_command": "CENTERED", "details": "published=CENTERED"}
+{"timestamp": "2026-06-12 17:27:48", "unix_ts": 1781278068.749887, "event": "OUT_OF_FRAME", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "lost_frames=1"}
+{"timestamp": "2026-06-12 17:27:51", "unix_ts": 1781278071.9417324, "event": "LOCK_LOST", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "target left frame beyond tolerance"}
+{"timestamp": "2026-06-12 17:27:51", "unix_ts": 1781278071.944864, "event": "MOTOR_COMMAND", "speaker_id": "Jovin", "confidence": 0.0, "motor_command": "NO_FACE", "details": "published=NO_FACE"}
+{"timestamp": "2026-06-12 17:28:09", "unix_ts": 1781278089.7069964, "event": "LOCK_ACQUIRED", "speaker_id": "Jovin", "confidence": 0.6850399374961853, "motor_command": null, "details": "target entered frame"}
+{"timestamp": "2026-06-12 17:28:09", "unix_ts": 1781278089.7129903, "event": "MOVED_LEFT", "speaker_id": "Jovin", "confidence": 0.6850399374961853, "motor_command": null, "details": "cx_norm=0.26"}
+{"timestamp": "2026-06-12 17:28:09", "unix_ts": 1781278089.7170227, "event": "MOTOR_COMMAND", "speaker_id": "Jovin", "confidence": 0.6850399374961853, "motor_command": "CENTERED", "details": "published=CENTERED"}
+{"timestamp": "2026-06-12 17:28:09", "unix_ts": 1781278089.749989, "event": "OUT_OF_FRAME", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "lost_frames=1"}
+{"timestamp": "2026-06-12 17:28:09", "unix_ts": 1781278089.8486571, "event": "BACK_IN_FRAME", "speaker_id": "Jovin", "confidence": 0.7216790914535522, "motor_command": null, "details": "target visible again after occlusion"}
+{"timestamp": "2026-06-12 17:28:09", "unix_ts": 1781278089.852633, "event": "MOVED_LEFT", "speaker_id": "Jovin", "confidence": 0.7216790914535522, "motor_command": null, "details": "cx_norm=0.29"}
+{"timestamp": "2026-06-12 17:28:10", "unix_ts": 1781278090.0096333, "event": "OUT_OF_FRAME", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "lost_frames=1"}
+{"timestamp": "2026-06-12 17:28:10", "unix_ts": 1781278090.0826523, "event": "BACK_IN_FRAME", "speaker_id": "Jovin", "confidence": 0.720054566860199, "motor_command": null, "details": "target visible again after occlusion"}
+{"timestamp": "2026-06-12 17:28:10", "unix_ts": 1781278090.090635, "event": "STOPPED", "speaker_id": "Jovin", "confidence": 0.720054566860199, "motor_command": null, "details": "cx_norm=0.42"}
+{"timestamp": "2026-06-12 17:28:10", "unix_ts": 1781278090.3830504, "event": "OUT_OF_FRAME", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "lost_frames=1"}
+{"timestamp": "2026-06-12 17:28:10", "unix_ts": 1781278090.5083969, "event": "BACK_IN_FRAME", "speaker_id": "Jovin", "confidence": 0.6271374225616455, "motor_command": null, "details": "target visible again after occlusion"}
+{"timestamp": "2026-06-12 17:28:10", "unix_ts": 1781278090.5133736, "event": "STOPPED", "speaker_id": "Jovin", "confidence": 0.6271374225616455, "motor_command": null, "details": "cx_norm=0.58"}
+{"timestamp": "2026-06-12 17:28:10", "unix_ts": 1781278090.5863788, "event": "MOVED_RIGHT", "speaker_id": "Jovin", "confidence": 0.5776044726371765, "motor_command": null, "details": "cx_norm=0.61"}
+{"timestamp": "2026-06-12 17:28:12", "unix_ts": 1781278092.674974, "event": "OUT_OF_FRAME", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "lost_frames=1"}
+{"timestamp": "2026-06-12 17:28:15", "unix_ts": 1781278095.4441347, "event": "BACK_IN_FRAME", "speaker_id": "Jovin", "confidence": 0.7024936079978943, "motor_command": null, "details": "target visible again after occlusion"}
+{"timestamp": "2026-06-12 17:28:15", "unix_ts": 1781278095.4511096, "event": "MOVED_RIGHT", "speaker_id": "Jovin", "confidence": 0.7024936079978943, "motor_command": null, "details": "cx_norm=0.79"}
+{"timestamp": "2026-06-12 17:28:15", "unix_ts": 1781278095.4731112, "event": "OUT_OF_FRAME", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "lost_frames=1"}
+{"timestamp": "2026-06-12 17:28:15", "unix_ts": 1781278095.5581207, "event": "BACK_IN_FRAME", "speaker_id": "Jovin", "confidence": 0.7472037076950073, "motor_command": null, "details": "target visible again after occlusion"}
+{"timestamp": "2026-06-12 17:28:15", "unix_ts": 1781278095.564109, "event": "MOVED_RIGHT", "speaker_id": "Jovin", "confidence": 0.7472037076950073, "motor_command": null, "details": "cx_norm=0.69"}
+{"timestamp": "2026-06-12 17:28:15", "unix_ts": 1781278095.6830547, "event": "OUT_OF_FRAME", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "lost_frames=1"}
+{"timestamp": "2026-06-12 17:28:15", "unix_ts": 1781278095.9351819, "event": "BACK_IN_FRAME", "speaker_id": "Jovin", "confidence": 0.7553785443305969, "motor_command": null, "details": "target visible again after occlusion"}
+{"timestamp": "2026-06-12 17:28:15", "unix_ts": 1781278095.9381747, "event": "STOPPED", "speaker_id": "Jovin", "confidence": 0.7553785443305969, "motor_command": null, "details": "cx_norm=0.59"}
+{"timestamp": "2026-06-12 17:28:15", "unix_ts": 1781278095.973169, "event": "OUT_OF_FRAME", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "lost_frames=1"}
+{"timestamp": "2026-06-12 17:28:16", "unix_ts": 1781278096.0901952, "event": "BACK_IN_FRAME", "speaker_id": "Jovin", "confidence": 0.7842675447463989, "motor_command": null, "details": "target visible again after occlusion"}
+{"timestamp": "2026-06-12 17:28:16", "unix_ts": 1781278096.1141732, "event": "STOPPED", "speaker_id": "Jovin", "confidence": 0.7842675447463989, "motor_command": null, "details": "cx_norm=0.48"}
+{"timestamp": "2026-06-12 17:28:16", "unix_ts": 1781278096.2331684, "event": "OUT_OF_FRAME", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "lost_frames=1"}
+{"timestamp": "2026-06-12 17:28:16", "unix_ts": 1781278096.293189, "event": "BACK_IN_FRAME", "speaker_id": "Jovin", "confidence": 0.7439113259315491, "motor_command": null, "details": "target visible again after occlusion"}
+{"timestamp": "2026-06-12 17:28:16", "unix_ts": 1781278096.3091629, "event": "STOPPED", "speaker_id": "Jovin", "confidence": 0.7439113259315491, "motor_command": null, "details": "cx_norm=0.41"}
+{"timestamp": "2026-06-12 17:28:16", "unix_ts": 1781278096.4722433, "event": "MOVED_LEFT", "speaker_id": "Jovin", "confidence": 0.717019259929657, "motor_command": null, "details": "cx_norm=0.33"}
+{"timestamp": "2026-06-12 17:28:16", "unix_ts": 1781278096.4982245, "event": "OUT_OF_FRAME", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "lost_frames=1"}
+{"timestamp": "2026-06-12 17:28:16", "unix_ts": 1781278096.550231, "event": "BACK_IN_FRAME", "speaker_id": "Jovin", "confidence": 0.7277991771697998, "motor_command": null, "details": "target visible again after occlusion"}
+{"timestamp": "2026-06-12 17:28:16", "unix_ts": 1781278096.561229, "event": "MOVED_LEFT", "speaker_id": "Jovin", "confidence": 0.7277991771697998, "motor_command": null, "details": "cx_norm=0.36"}
+{"timestamp": "2026-06-12 17:28:16", "unix_ts": 1781278096.625272, "event": "OUT_OF_FRAME", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "lost_frames=1"}
+{"timestamp": "2026-06-12 17:28:16", "unix_ts": 1781278096.6988614, "event": "BACK_IN_FRAME", "speaker_id": "Jovin", "confidence": 0.766838788986206, "motor_command": null, "details": "target visible again after occlusion"}
+{"timestamp": "2026-06-12 17:28:16", "unix_ts": 1781278096.7098336, "event": "MOVED_LEFT", "speaker_id": "Jovin", "confidence": 0.766838788986206, "motor_command": null, "details": "cx_norm=0.26"}
+{"timestamp": "2026-06-12 17:28:16", "unix_ts": 1781278096.7808301, "event": "OUT_OF_FRAME", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "lost_frames=1"}
+{"timestamp": "2026-06-12 17:28:16", "unix_ts": 1781278096.8488626, "event": "BACK_IN_FRAME", "speaker_id": "Jovin", "confidence": 0.6542943120002747, "motor_command": null, "details": "target visible again after occlusion"}
+{"timestamp": "2026-06-12 17:28:16", "unix_ts": 1781278096.8538349, "event": "MOVED_LEFT", "speaker_id": "Jovin", "confidence": 0.6542943120002747, "motor_command": null, "details": "cx_norm=0.20"}
+{"timestamp": "2026-06-12 17:28:16", "unix_ts": 1781278096.9238303, "event": "OUT_OF_FRAME", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "lost_frames=1"}
+{"timestamp": "2026-06-12 17:28:20", "unix_ts": 1781278100.2896552, "event": "LOCK_LOST", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "target left frame beyond tolerance"}
+{"timestamp": "2026-06-12 17:28:20", "unix_ts": 1781278100.3027084, "event": "MOTOR_COMMAND", "speaker_id": "Jovin", "confidence": 0.0, "motor_command": "NO_FACE", "details": "published=NO_FACE"}

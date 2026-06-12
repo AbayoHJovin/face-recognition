@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragonfly Vision Monitor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f4f1ea;
+            --surface: #fffdf8;
+            --ink: #1a1f2e;
+            --muted: #6b7280;
+            --line: #e5e0d5;
+            --accent: #c45c26;
+            --accent-soft: #fde8d8;
+            --ok: #2d6a4f;
+            --ok-soft: #d8f3dc;
+            --warn: #bc6c25;
+            --warn-soft: #fef3c7;
+            --bad: #9b2226;
+            --bad-soft: #fee2e2;
+            --shadow: 0 12px 40px rgba(26, 31, 46, 0.08);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: 'DM Sans', sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            display: grid;
+            grid-template-columns: 260px 1fr;
+        }
+
+        aside {
+            background: var(--ink);
+            color: #f8fafc;
+            padding: 28px 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            border-right: 4px solid var(--accent);
+        }
+
+        .brand {
+            font-family: 'Fraunces', serif;
+            font-size: 1.55rem;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .brand span {
+            display: block;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #94a3b8;
+            margin-top: 6px;
+        }
+
+        .nav-label {
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #94a3b8;
+            margin-bottom: 10px;
+        }
+
+        .stat-pill {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 12px 14px;
+            margin-bottom: 8px;
+        }
+
+        .stat-pill .label {
+            font-size: 0.72rem;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .stat-pill .value {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 10px;
+            border-radius: 999px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .badge.ok { background: var(--ok-soft); color: var(--ok); }
+        .badge.bad { background: var(--bad-soft); color: var(--bad); }
+        .badge.warn { background: var(--warn-soft); color: var(--warn); }
+
+        .badge::before {
+            content: '';
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+
+        main {
+            padding: 28px 32px 40px;
+            display: grid;
+            gap: 22px;
+            grid-template-columns: 1.2fr 0.8fr;
+            grid-template-rows: auto auto 1fr;
+        }
+
+        .hero {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--line);
+        }
+
+        .hero h1 {
+            font-family: 'Fraunces', serif;
+            font-size: clamp(1.8rem, 3vw, 2.6rem);
+            margin: 0;
+            letter-spacing: -0.03em;
+        }
+
+        .hero p {
+            margin: 6px 0 0;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .clock {
+            font-family: 'Fraunces', serif;
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+
+        .panel {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .panel-head {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--line);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        .face-wrap {
+            min-height: 340px;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+            background:
+                linear-gradient(145deg, #fffdf8 0%, #f7efe3 100%);
+        }
+
+        #face-image {
+            max-width: 100%;
+            max-height: 300px;
+            border-radius: 14px;
+            border: 3px solid var(--ink);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            display: none;
+        }
+
+        #no-face-msg {
+            text-align: center;
+            color: var(--muted);
+        }
+
+        #no-face-msg strong {
+            display: block;
+            font-family: 'Fraunces', serif;
+            font-size: 1.3rem;
+            color: var(--ink);
+            margin-bottom: 6px;
+        }
+
+        .metrics {
+            display: grid;
+            gap: 14px;
+            padding: 18px 20px 22px;
+        }
+
+        .metric {
+            padding: 16px 18px;
+            border-radius: 14px;
+            background: #faf7f2;
+            border: 1px solid var(--line);
+        }
+
+        .metric .k {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+            margin-bottom: 8px;
+        }
+
+        .metric .v {
+            font-family: 'Fraunces', serif;
+            font-size: 1.65rem;
+            line-height: 1.1;
+        }
+
+        #movement-status { color: var(--accent); }
+        #target-info { font-size: 1.1rem; color: var(--ink); }
+
+        .confidence-bar {
+            height: 8px;
+            background: var(--line);
+            border-radius: 999px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        #confidence-fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, var(--ok), #40916c);
+            transition: width 0.35s ease;
+        }
+
+        .log-panel {
+            grid-column: 1 / -1;
+        }
+
+        #logs {
+            max-height: 180px;
+            overflow-y: auto;
+            padding: 14px 20px 18px;
+            font-family: ui-monospace, 'Cascadia Code', monospace;
+            font-size: 0.82rem;
+            color: #374151;
+        }
+
+        .log-entry {
+            padding: 8px 0;
+            border-bottom: 1px dashed var(--line);
+        }
+
+        @media (max-width: 960px) {
+            body { grid-template-columns: 1fr; }
+            aside { border-right: none; border-bottom: 4px solid var(--accent); }
+            main { grid-template-columns: 1fr; padding: 20px; }
+        }
+    </style>
+</head>
+
+<body>
+    <aside>
+        <div class="brand">
+            Dragonfly
+            <span>Face Lock Monitor</span>
+        </div>
+
+        <div>
+            <div class="nav-label">Connections</div>
+            <div class="stat-pill">
+                <div class="label">WebSocket</div>
+                <div class="value"><span id="connection-status" class="badge bad">Offline</span></div>
+            </div>
+            <div class="stat-pill">
+                <div class="label">MQTT Broker</div>
+                <div class="value"><span id="mqtt-status" class="badge bad">Offline</span></div>
+            </div>
+        </div>
+
+        <div>
+            <div class="nav-label">Lock state</div>
+            <div class="stat-pill">
+                <div class="label">Status</div>
+                <div class="value"><span id="lock-status" class="badge warn">Searching</span></div>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <section class="hero">
+            <div>
+                <h1>Live Tracking Board</h1>
+                <p>Monitoring enrolled target only — stray broker messages are ignored.</p>
+            </div>
+            <div class="clock" id="timestamp">--:--:--</div>
+        </section>
+
+        <section class="panel">
+            <div class="panel-head">Captured Subject</div>
+            <div class="face-wrap">
+                <img id="face-image" src="" alt="Locked face">
+                <div id="no-face-msg">
+                    <strong>No capture yet</strong>
+                    Stand in front of the camera to lock on.
+                </div>
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="panel-head">Tracking Metrics</div>
+            <div class="metrics">
+                <div class="metric">
+                    <div class="k">Movement command</div>
+                    <div class="v" id="movement-status">WAITING</div>
+                </div>
+                <div class="metric">
+                    <div class="k">Enrolled target</div>
+                    <div class="v" id="target-info">Jovin</div>
+                </div>
+                <div class="metric">
+                    <div class="k">Match confidence</div>
+                    <div class="v" id="confidence-text">—</div>
+                    <div class="confidence-bar"><div id="confidence-fill"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel log-panel">
+            <div class="panel-head">Activity feed</div>
+            <div id="logs"></div>
+        </section>
+    </main>
+
+    <script>
+        const TARGET_NAME = 'Jovin';
+        const wsUrl = `ws://${window.location.hostname || '127.0.0.1'}:9002`;
+
+        const statusEl = document.getElementById('movement-status');
+        const connEl = document.getElementById('connection-status');
+        const mqttEl = document.getElementById('mqtt-status');
+        const timeEl = document.getElementById('timestamp');
+        const confTextEl = document.getElementById('confidence-text');
+        const confFillEl = document.getElementById('confidence-fill');
+        const logsEl = document.getElementById('logs');
+        const targetEl = document.getElementById('target-info');
+        const lockEl = document.getElementById('lock-status');
+        const faceImageEl = document.getElementById('face-image');
+        const noFaceMsgEl = document.getElementById('no-face-msg');
+
+        targetEl.textContent = TARGET_NAME;
+
+        function setBadge(el, text, kind) {
+            el.textContent = text;
+            el.className = `badge ${kind}`;
+        }
+
+        function isOurTarget(data) {
+            if (!data.target) return true;
+            return String(data.target).toLowerCase() === TARGET_NAME.toLowerCase();
+        }
+
+        function addLog(msg) {
+            const entry = document.createElement('div');
+            entry.className = 'log-entry';
+            entry.textContent = `[${new Date().toLocaleTimeString()}] ${msg}`;
+            logsEl.insertBefore(entry, logsEl.firstChild);
+            while (logsEl.children.length > 40) {
+                logsEl.removeChild(logsEl.lastChild);
+            }
+        }
+
+        function updateConfidence(value) {
+            if (value === undefined || value === null) return;
+            const pct = Math.max(0, Math.min(100, value * 100));
+            confTextEl.textContent = `${pct.toFixed(1)}%`;
+            confFillEl.style.width = `${pct}%`;
+        }
+
+        function updateSnapshot(data) {
+            if (!isOurTarget(data)) return;
+            if (data.face_image) {
+                faceImageEl.src = 'data:image/jpeg;base64,' + data.face_image;
+                faceImageEl.style.display = 'block';
+                noFaceMsgEl.style.display = 'none';
+            }
+            updateConfidence(data.confidence);
+        }
+
+        function updateDashboard(data) {
+            if (!isOurTarget(data)) {
+                addLog(`Ignored foreign target: ${data.target}`);
+                return;
+            }
+
+            statusEl.textContent = data.status.replace(/_/g, ' ');
+
+            if (data.face_image) {
+                faceImageEl.src = 'data:image/jpeg;base64,' + data.face_image;
+                faceImageEl.style.display = 'block';
+                noFaceMsgEl.style.display = 'none';
+            } else if (!data.locked) {
+                faceImageEl.style.display = 'none';
+                noFaceMsgEl.style.display = 'block';
+            }
+
+            if (data.locked) {
+                setBadge(lockEl, 'Locked', 'ok');
+            } else {
+                setBadge(lockEl, 'Searching', 'warn');
+            }
+
+            const colors = {
+                MOVE_LEFT: '#9b2226',
+                MOVE_RIGHT: '#c45c26',
+                CENTERED: '#2d6a4f',
+                NO_FACE: '#6b7280',
+            };
+            statusEl.style.color = colors[data.status] || '#1a1f2e';
+
+            updateConfidence(data.confidence);
+            timeEl.textContent = new Date().toLocaleTimeString();
+        }
+
+        function connect() {
+            const ws = new WebSocket(wsUrl);
+
+            ws.onopen = () => {
+                setBadge(connEl, 'Online', 'ok');
+                addLog('Dashboard connected.');
+            };
+
+            ws.onclose = () => {
+                setBadge(connEl, 'Offline', 'bad');
+                setBadge(mqttEl, 'Offline', 'bad');
+                addLog('Connection lost — retrying…');
+                setTimeout(connect, 3000);
+            };
+
+            ws.onmessage = (event) => {
+                try {
+                    const data = JSON.parse(event.data);
+
+                    if (data.type === 'STATUS') {
+                        if (data.mqttConnected) setBadge(mqttEl, 'Linked', 'ok');
+                        else setBadge(mqttEl, 'Offline', 'bad');
+                        return;
+                    }
+
+                    if (data.status) updateDashboard(data);
+                    else if (data.face_image) updateSnapshot(data);
+                } catch (e) {
+                    console.log('Bad message', event.data);
+                }
+            };
+        }
+
+        connect();
+    </script>
+</body>
+
+</html>

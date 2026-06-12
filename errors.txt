@@ -1,0 +1,74 @@
+.....
+WiFi connected
+ESP32 IP: 10.11.75.244
+Gateway: 10.11.72.1
+MQTT target: 157.173.101.159:1883
+Client ID: esp32_dragonfly_0000442047470968
+Attempting MQTT connection...failed, rc=-2 (TCP timeout — check VPS reachable on port 1883) — retry later
+Attempting MQTT connection...failed, rc=-2 (TCP timeout — check VPS reachable on port 1883) — retry later
+Attempting MQTT connection...failed, rc=-4 — retry later
+Attempting MQTT connection...failed, rc=-2 (TCP timeout — check VPS reachable on port 1883) — retry later
+Attempting MQTT connection...Connected!
+E (67878) wifi:sta is connecting, return error
+E (68378) wifi:sta is connecting, return error
+E (68878) wifi:sta is connecting, return error
+E (69378) wifi:sta is connecting, return error
+E (69878) wifi:sta is connecting, return error
+E (70378) wifi:sta is connecting, return error
+E (70878) wifi:sta is connecting, return error
+E (71378) wifi:sta is connecting, return error
+E (71878) wifi:sta is connecting, return error
+E (72378) wifi:sta is connecting, return error
+E (72878) wifi:sta is connecting, return error
+E (73378) wifi:sta is connecting, return error
+E (73878) wifi:sta is connecting, return error
+E (74378) wifi:sta is connecting, return error
+E (74878) wifi:sta is connecting, return error
+E (75378) wifi:sta is connecting, return error
+E (75878) wifi:sta is connecting, return error
+E (76378) wifi:sta is connecting, return error
+E (76878) wifi:sta is connecting, return error
+E (77378) wifi:sta is connecting, return error
+E (77878) wifi:sta is connecting, return error
+E (78378) wifi:sta is connecting, return error
+E (78878) wifi:sta is connecting, return error
+E (79378) wifi:sta is connecting, return error
+E (79878) wifi:sta is connecting, return error
+E (80378) wifi:sta is connecting, return error
+E (80878) wifi:sta is connecting, return error
+E (81378) wifi:sta is connecting, return error
+E (81878) wifi:sta is connecting, return error
+E (82378) wifi:sta is connecting, return error
+E (82878) wifi:sta is connecting, return error
+E (83378) wifi:sta is connecting, return error
+E (83878) wifi:sta is connecting, return error
+E (84378) wifi:sta is connecting, return error
+E (84878) wifi:sta is connecting, return error
+E (85378) wifi:sta is connecting, return error
+E (85878) wifi:sta is connecting, return error
+E (86378) wifi:sta is connecting, return error
+E (86878) wifi:sta is connecting, return error
+E (87378) wifi:sta is connecting, return error
+E (87878) wifi:sta is connecting, return error
+E (88378) wifi:sta is connecting, return error
+E (88878) wifi:sta is connecting, return error
+E (89378) wifi:sta is connecting, return error
+E (89878) wifi:sta is connecting, return error
+E (90378) wifi:sta is connecting, return error
+E (90878) wifi:sta is connecting, return error
+E (91378) wifi:sta is connecting, return error
+E (91878) wifi:sta is connecting, return error
+E (92378) wifi:sta is connecting, return error
+E (92878) wifi:sta is connecting, return error
+E (93378) wifi:sta is connecting, return error
+E (93878) wifi:sta is connecting, return error
+E (94378) wifi:sta is connecting, return error
+E (94878) wifi:sta is connecting, return error
+E (95378) wifi:sta is connecting, return error
+E (95878) wifi:sta is connecting, return error
+E (96378) wifi:sta is connecting, return error
+E (96878) wifi:sta is connecting, return error
+E (97378) wifi:sta is connecting, return error
+E (97878) wifi:sta is connecting, return error
+E (98378) wifi:sta is connecting, return error
+E (98878) wifi:sta is connecting, return error

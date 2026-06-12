@@ -1,0 +1,47 @@
+2026-06-12 14:29:52 | SESSION_START | speaker=Jovin | confidence=n/a | motor=n/a | vision node online
+2026-06-12 14:29:54 | MOTOR_COMMAND | speaker=Jovin | confidence=0.00 | motor=NO_FACE | published=NO_FACE
+2026-06-12 14:29:59 | LOCK_ACQUIRED | speaker=Jovin | confidence=0.52 | motor=n/a | target entered frame
+2026-06-12 14:29:59 | MOVED_LEFT | speaker=Jovin | confidence=0.52 | motor=n/a | cx_norm=0.39
+2026-06-12 14:29:59 | MOTOR_COMMAND | speaker=Jovin | confidence=0.52 | motor=MOVE_LEFT | published=MOVE_LEFT
+2026-06-12 14:29:59 | OUT_OF_FRAME | speaker=Jovin | confidence=n/a | motor=n/a | lost_frames=1
+2026-06-12 14:29:59 | MOTOR_COMMAND | speaker=Jovin | confidence=0.00 | motor=NO_FACE | published=NO_FACE
+2026-06-12 14:30:00 | LOCK_LOST | speaker=Jovin | confidence=n/a | motor=n/a | target left frame beyond tolerance
+2026-06-12 14:30:10 | LOCK_ACQUIRED | speaker=Jovin | confidence=0.62 | motor=n/a | target entered frame
+2026-06-12 14:30:10 | MOVED_LEFT | speaker=Jovin | confidence=0.62 | motor=n/a | cx_norm=0.40
+2026-06-12 14:30:10 | MOTOR_COMMAND | speaker=Jovin | confidence=0.62 | motor=MOVE_LEFT | published=MOVE_LEFT
+2026-06-12 14:30:10 | OUT_OF_FRAME | speaker=Jovin | confidence=n/a | motor=n/a | lost_frames=1
+2026-06-12 14:30:10 | BACK_IN_FRAME | speaker=Jovin | confidence=0.65 | motor=n/a | target visible again after occlusion
+2026-06-12 14:30:10 | STOPPED | speaker=Jovin | confidence=0.65 | motor=n/a | cx_norm=0.52
+2026-06-12 14:30:10 | MOTOR_COMMAND | speaker=Jovin | confidence=0.65 | motor=CENTERED | published=CENTERED
+2026-06-12 14:30:10 | OUT_OF_FRAME | speaker=Jovin | confidence=n/a | motor=n/a | lost_frames=1
+2026-06-12 14:30:10 | BACK_IN_FRAME | speaker=Jovin | confidence=0.68 | motor=n/a | target visible again after occlusion
+2026-06-12 14:30:10 | MOVED_RIGHT | speaker=Jovin | confidence=0.68 | motor=n/a | cx_norm=0.76
+2026-06-12 14:30:10 | OUT_OF_FRAME | speaker=Jovin | confidence=n/a | motor=n/a | lost_frames=1
+2026-06-12 14:30:10 | BACK_IN_FRAME | speaker=Jovin | confidence=0.69 | motor=n/a | target visible again after occlusion
+2026-06-12 14:30:10 | MOVED_RIGHT | speaker=Jovin | confidence=0.69 | motor=n/a | cx_norm=0.66
+2026-06-12 14:30:10 | MOTOR_COMMAND | speaker=Jovin | confidence=0.69 | motor=MOVE_RIGHT | published=MOVE_RIGHT
+2026-06-12 14:30:10 | OUT_OF_FRAME | speaker=Jovin | confidence=n/a | motor=n/a | lost_frames=1
+2026-06-12 14:30:10 | BACK_IN_FRAME | speaker=Jovin | confidence=0.65 | motor=n/a | target visible again after occlusion
+2026-06-12 14:30:10 | MOVED_RIGHT | speaker=Jovin | confidence=0.65 | motor=n/a | cx_norm=0.79
+2026-06-12 14:30:10 | OUT_OF_FRAME | speaker=Jovin | confidence=n/a | motor=n/a | lost_frames=1
+2026-06-12 14:30:10 | MOTOR_COMMAND | speaker=Jovin | confidence=0.00 | motor=NO_FACE | published=NO_FACE
+2026-06-12 14:30:11 | LOCK_LOST | speaker=Jovin | confidence=n/a | motor=n/a | target left frame beyond tolerance
+2026-06-12 14:30:36 | LOCK_ACQUIRED | speaker=Jovin | confidence=0.57 | motor=n/a | target entered frame
+2026-06-12 14:30:36 | MOVED_LEFT | speaker=Jovin | confidence=0.57 | motor=n/a | cx_norm=0.33
+2026-06-12 14:30:36 | MOTOR_COMMAND | speaker=Jovin | confidence=0.57 | motor=MOVE_LEFT | published=MOVE_LEFT
+2026-06-12 14:30:36 | OUT_OF_FRAME | speaker=Jovin | confidence=n/a | motor=n/a | lost_frames=1
+2026-06-12 14:30:36 | BACK_IN_FRAME | speaker=Jovin | confidence=0.69 | motor=n/a | target visible again after occlusion
+2026-06-12 14:30:36 | MOVED_LEFT | speaker=Jovin | confidence=0.69 | motor=n/a | cx_norm=0.22
+2026-06-12 14:30:36 | OUT_OF_FRAME | speaker=Jovin | confidence=n/a | motor=n/a | lost_frames=1
+2026-06-12 14:30:36 | MOTOR_COMMAND | speaker=Jovin | confidence=0.00 | motor=NO_FACE | published=NO_FACE
+2026-06-12 14:30:36 | LOCK_LOST | speaker=Jovin | confidence=n/a | motor=n/a | target left frame beyond tolerance
+2026-06-12 14:30:43 | LOCK_ACQUIRED | speaker=Jovin | confidence=0.70 | motor=n/a | target entered frame
+2026-06-12 14:30:43 | STOPPED | speaker=Jovin | confidence=0.70 | motor=n/a | cx_norm=0.42
+2026-06-12 14:30:43 | OUT_OF_FRAME | speaker=Jovin | confidence=n/a | motor=n/a | lost_frames=1
+2026-06-12 14:30:43 | LOCK_LOST | speaker=Jovin | confidence=n/a | motor=n/a | target left frame beyond tolerance
+2026-06-12 14:32:46 | LOCK_ACQUIRED | speaker=Jovin | confidence=0.71 | motor=n/a | target entered frame
+2026-06-12 14:32:46 | MOVED_RIGHT | speaker=Jovin | confidence=0.71 | motor=n/a | cx_norm=0.76
+2026-06-12 14:32:47 | MOTOR_COMMAND | speaker=Jovin | confidence=0.71 | motor=MOVE_RIGHT | published=MOVE_RIGHT
+2026-06-12 14:32:47 | OUT_OF_FRAME | speaker=Jovin | confidence=n/a | motor=n/a | lost_frames=1
+2026-06-12 14:32:47 | MOTOR_COMMAND | speaker=Jovin | confidence=0.00 | motor=NO_FACE | published=NO_FACE
+2026-06-12 14:32:47 | LOCK_LOST | speaker=Jovin | confidence=n/a | motor=n/a | target left frame beyond tolerance

@@ -1,0 +1,78 @@
+2026-06-12 17:14:05 | SESSION_START | speaker=Jovin | confidence=n/a | motor=n/a | vision node online
+2026-06-12 17:14:06 | MOTOR_COMMAND | speaker=Jovin | confidence=0.00 | motor=NO_FACE | published=NO_FACE
+2026-06-12 17:14:12 | LOCK_ACQUIRED | speaker=Jovin | confidence=0.65 | motor=n/a | target entered frame
+2026-06-12 17:14:12 | MOVED_LEFT | speaker=Jovin | confidence=0.65 | motor=n/a | cx_norm=0.20
+2026-06-12 17:14:12 | MOTOR_COMMAND | speaker=Jovin | confidence=0.65 | motor=MOVE_LEFT | published=MOVE_LEFT
+2026-06-12 17:14:13 | MOTOR_COMMAND | speaker=Jovin | confidence=0.78 | motor=CENTERED | published=CENTERED
+2026-06-12 17:14:13 | STOPPED | speaker=Jovin | confidence=0.79 | motor=n/a | cx_norm=0.40
+2026-06-12 17:14:13 | MOVED_LEFT | speaker=Jovin | confidence=0.75 | motor=n/a | cx_norm=0.39
+2026-06-12 17:14:13 | STOPPED | speaker=Jovin | confidence=0.79 | motor=n/a | cx_norm=0.44
+2026-06-12 17:14:14 | MOVED_RIGHT | speaker=Jovin | confidence=0.53 | motor=n/a | cx_norm=0.60
+2026-06-12 17:14:14 | MOTOR_COMMAND | speaker=Jovin | confidence=0.76 | motor=MOVE_RIGHT | published=MOVE_RIGHT
+2026-06-12 17:14:14 | OUT_OF_FRAME | speaker=Jovin | confidence=n/a | motor=n/a | lost_frames=1
+2026-06-12 17:14:14 | MOTOR_COMMAND | speaker=Jovin | confidence=0.68 | motor=CENTERED | published=CENTERED
+2026-06-12 17:14:17 | LOCK_LOST | speaker=Jovin | confidence=n/a | motor=n/a | target left frame beyond tolerance
+2026-06-12 17:14:17 | MOTOR_COMMAND | speaker=Jovin | confidence=0.00 | motor=NO_FACE | published=NO_FACE
+2026-06-12 17:14:29 | LOCK_ACQUIRED | speaker=Jovin | confidence=0.79 | motor=n/a | target entered frame
+2026-06-12 17:14:29 | MOVED_LEFT | speaker=Jovin | confidence=0.79 | motor=n/a | cx_norm=0.33
+2026-06-12 17:14:29 | OUT_OF_FRAME | speaker=Jovin | confidence=n/a | motor=n/a | lost_frames=1
+2026-06-12 17:14:29 | MOTOR_COMMAND | speaker=Jovin | confidence=0.79 | motor=CENTERED | published=CENTERED
+2026-06-12 17:14:30 | BACK_IN_FRAME | speaker=Jovin | confidence=0.80 | motor=n/a | target visible again after occlusion
+2026-06-12 17:14:30 | MOVED_LEFT | speaker=Jovin | confidence=0.80 | motor=n/a | cx_norm=0.33
+2026-06-12 17:14:30 | OUT_OF_FRAME | speaker=Jovin | confidence=n/a | motor=n/a | lost_frames=1
+2026-06-12 17:14:30 | BACK_IN_FRAME | speaker=Jovin | confidence=0.84 | motor=n/a | target visible again after occlusion
+2026-06-12 17:14:30 | MOVED_LEFT | speaker=Jovin | confidence=0.84 | motor=n/a | cx_norm=0.35
+2026-06-12 17:14:31 | STOPPED | speaker=Jovin | confidence=0.80 | motor=n/a | cx_norm=0.40
+2026-06-12 17:14:32 | MOVED_LEFT | speaker=Jovin | confidence=0.80 | motor=n/a | cx_norm=0.40
+2026-06-12 17:14:32 | STOPPED | speaker=Jovin | confidence=0.85 | motor=n/a | cx_norm=0.40
+2026-06-12 17:14:32 | MOVED_LEFT | speaker=Jovin | confidence=0.84 | motor=n/a | cx_norm=0.40
+2026-06-12 17:14:33 | STOPPED | speaker=Jovin | confidence=0.84 | motor=n/a | cx_norm=0.40
+2026-06-12 17:14:33 | MOVED_LEFT | speaker=Jovin | confidence=0.83 | motor=n/a | cx_norm=0.40
+2026-06-12 17:14:33 | STOPPED | speaker=Jovin | confidence=0.81 | motor=n/a | cx_norm=0.40
+2026-06-12 17:14:33 | MOVED_LEFT | speaker=Jovin | confidence=0.80 | motor=n/a | cx_norm=0.40
+2026-06-12 17:14:33 | STOPPED | speaker=Jovin | confidence=0.83 | motor=n/a | cx_norm=0.40
+2026-06-12 17:14:33 | MOVED_LEFT | speaker=Jovin | confidence=0.81 | motor=n/a | cx_norm=0.40
+2026-06-12 17:14:34 | STOPPED | speaker=Jovin | confidence=0.80 | motor=n/a | cx_norm=0.40
+2026-06-12 17:14:34 | MOVED_LEFT | speaker=Jovin | confidence=0.82 | motor=n/a | cx_norm=0.40
+2026-06-12 17:14:36 | MOTOR_COMMAND | speaker=Jovin | confidence=0.80 | motor=MOVE_LEFT | published=MOVE_LEFT
+2026-06-12 17:14:36 | OUT_OF_FRAME | speaker=Jovin | confidence=n/a | motor=n/a | lost_frames=1
+2026-06-12 17:14:36 | MOTOR_COMMAND | speaker=Jovin | confidence=0.67 | motor=CENTERED | published=CENTERED
+2026-06-12 17:14:39 | LOCK_LOST | speaker=Jovin | confidence=n/a | motor=n/a | target left frame beyond tolerance
+2026-06-12 17:14:39 | MOTOR_COMMAND | speaker=Jovin | confidence=0.00 | motor=NO_FACE | published=NO_FACE
+2026-06-12 17:14:53 | LOCK_ACQUIRED | speaker=Jovin | confidence=0.65 | motor=n/a | target entered frame
+2026-06-12 17:14:53 | MOVED_LEFT | speaker=Jovin | confidence=0.65 | motor=n/a | cx_norm=0.19
+2026-06-12 17:14:53 | MOTOR_COMMAND | speaker=Jovin | confidence=0.65 | motor=MOVE_LEFT | published=MOVE_LEFT
+2026-06-12 17:14:53 | MOTOR_COMMAND | speaker=Jovin | confidence=0.72 | motor=CENTERED | published=CENTERED
+2026-06-12 17:14:54 | STOPPED | speaker=Jovin | confidence=0.49 | motor=n/a | cx_norm=0.42
+2026-06-12 17:14:54 | MOVED_RIGHT | speaker=Jovin | confidence=0.78 | motor=n/a | cx_norm=0.62
+2026-06-12 17:14:54 | MOTOR_COMMAND | speaker=Jovin | confidence=0.76 | motor=MOVE_RIGHT | published=MOVE_RIGHT
+2026-06-12 17:14:56 | MOTOR_COMMAND | speaker=Jovin | confidence=0.79 | motor=CENTERED | published=CENTERED
+2026-06-12 17:14:56 | STOPPED | speaker=Jovin | confidence=0.79 | motor=n/a | cx_norm=0.59
+2026-06-12 17:14:56 | OUT_OF_FRAME | speaker=Jovin | confidence=n/a | motor=n/a | lost_frames=1
+2026-06-12 17:14:56 | BACK_IN_FRAME | speaker=Jovin | confidence=0.53 | motor=n/a | target visible again after occlusion
+2026-06-12 17:14:56 | MOVED_LEFT | speaker=Jovin | confidence=0.53 | motor=n/a | cx_norm=0.36
+2026-06-12 17:14:56 | OUT_OF_FRAME | speaker=Jovin | confidence=n/a | motor=n/a | lost_frames=1
+2026-06-12 17:14:57 | BACK_IN_FRAME | speaker=Jovin | confidence=0.53 | motor=n/a | target visible again after occlusion
+2026-06-12 17:14:57 | STOPPED | speaker=Jovin | confidence=0.53 | motor=n/a | cx_norm=0.45
+2026-06-12 17:14:57 | MOVED_LEFT | speaker=Jovin | confidence=0.53 | motor=n/a | cx_norm=0.34
+2026-06-12 17:14:58 | STOPPED | speaker=Jovin | confidence=0.50 | motor=n/a | cx_norm=0.44
+2026-06-12 17:14:59 | MOVED_RIGHT | speaker=Jovin | confidence=0.75 | motor=n/a | cx_norm=0.67
+2026-06-12 17:14:59 | OUT_OF_FRAME | speaker=Jovin | confidence=n/a | motor=n/a | lost_frames=1
+2026-06-12 17:14:59 | BACK_IN_FRAME | speaker=Jovin | confidence=0.72 | motor=n/a | target visible again after occlusion
+2026-06-12 17:14:59 | MOVED_RIGHT | speaker=Jovin | confidence=0.72 | motor=n/a | cx_norm=0.75
+2026-06-12 17:14:59 | MOTOR_COMMAND | speaker=Jovin | confidence=0.72 | motor=MOVE_RIGHT | published=MOVE_RIGHT
+2026-06-12 17:15:00 | OUT_OF_FRAME | speaker=Jovin | confidence=n/a | motor=n/a | lost_frames=1
+2026-06-12 17:15:00 | MOTOR_COMMAND | speaker=Jovin | confidence=0.41 | motor=CENTERED | published=CENTERED
+2026-06-12 17:15:03 | LOCK_LOST | speaker=Jovin | confidence=n/a | motor=n/a | target left frame beyond tolerance
+2026-06-12 17:15:03 | MOTOR_COMMAND | speaker=Jovin | confidence=0.00 | motor=NO_FACE | published=NO_FACE
+2026-06-12 17:15:09 | LOCK_ACQUIRED | speaker=Jovin | confidence=0.64 | motor=n/a | target entered frame
+2026-06-12 17:15:09 | MOVED_RIGHT | speaker=Jovin | confidence=0.64 | motor=n/a | cx_norm=0.78
+2026-06-12 17:15:09 | MOTOR_COMMAND | speaker=Jovin | confidence=0.67 | motor=MOVE_RIGHT | published=MOVE_RIGHT
+2026-06-12 17:15:10 | MOTOR_COMMAND | speaker=Jovin | confidence=0.70 | motor=CENTERED | published=CENTERED
+2026-06-12 17:15:10 | STOPPED | speaker=Jovin | confidence=0.68 | motor=n/a | cx_norm=0.59
+2026-06-12 17:15:10 | MOVED_LEFT | speaker=Jovin | confidence=0.53 | motor=n/a | cx_norm=0.40
+2026-06-12 17:15:11 | MOTOR_COMMAND | speaker=Jovin | confidence=0.69 | motor=MOVE_LEFT | published=MOVE_LEFT
+2026-06-12 17:15:11 | OUT_OF_FRAME | speaker=Jovin | confidence=n/a | motor=n/a | lost_frames=1
+2026-06-12 17:15:11 | MOTOR_COMMAND | speaker=Jovin | confidence=0.57 | motor=CENTERED | published=CENTERED
+2026-06-12 17:15:14 | LOCK_LOST | speaker=Jovin | confidence=n/a | motor=n/a | target left frame beyond tolerance
+2026-06-12 17:15:14 | MOTOR_COMMAND | speaker=Jovin | confidence=0.00 | motor=NO_FACE | published=NO_FACE

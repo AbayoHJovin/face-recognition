@@ -1,0 +1,2 @@
+{"timestamp": "2026-06-12 13:51:31", "unix_ts": 1781265091.0899615, "event": "SESSION_START", "speaker_id": "Jovin", "confidence": null, "motor_command": null, "details": "vision node online"}
+{"timestamp": "2026-06-12 13:51:32", "unix_ts": 1781265092.3474066, "event": "MOTOR_COMMAND", "speaker_id": "Jovin", "confidence": 0.0, "motor_command": "NO_FACE", "details": "published=NO_FACE"}
